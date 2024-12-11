@@ -10,6 +10,11 @@ export const AddTodo = ({onAdd}) => {
             setErorr("Please fill in the field")
             return;
         }
+        const newTodo = {
+          id: Date.now(),  // Գեներացնում ենք յուրահատուկ ID
+          text: text.trim(),
+          completed: false,
+        };
         setErorr(null);
         onAdd(text);
         setText(""); 
