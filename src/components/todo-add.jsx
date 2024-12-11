@@ -11,7 +11,7 @@ export const AddTodo = ({onAdd}) => {
             return;
         }
         const newTodo = {
-          id: Date.now(),  // Գեներացնում ենք յուրահատուկ ID
+          id: Date.now(),  
           text: text.trim(),
           completed: false,
         };
